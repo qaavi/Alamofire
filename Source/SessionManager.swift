@@ -67,9 +67,9 @@ open class SessionManager {
         // Example: `iOS Example/1.0 (org.alamofire.iOS-Example; build:1; iOS 10.0.0) Alamofire/4.0.0`
         let userAgent: String = {
             if let info = Bundle.main.infoDictionary {
-                let executable = info[kCFBundleExecutableKey as String] as? String ?? "Unknown"
+                let executable = "Moove" // info[kCFBundleExecutableKey as String] as? String ?? "Unknown"
                 let bundle = info[kCFBundleIdentifierKey as String] as? String ?? "Unknown"
-                let appVersion = info["CFBundleShortVersionString"] as? String ?? "Unknown"
+                let appVersion = "1.6" // info["CFBundleShortVersionString"] as? String ?? "Unknown"
                 let appBuild = info[kCFBundleVersionKey as String] as? String ?? "Unknown"
 
                 let osNameVersion: String = {
